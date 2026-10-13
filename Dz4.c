@@ -1,20 +1,14 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
 int main() {
 	setlocale(LC_ALL, "Russian");
     int A, B;
-    printf("Введите сумму A: ");
-    scanf_s("%d", &A);
+    printf("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ A: ");
+    scanf("%d", &A);
 
-    printf("Введите сумму B: ");
+    printf("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ B: ");
     scanf_s("%d", &B);
-
-    if ((A % 2) != (B % 2)) {
-        printf("Код сгенерирован\n");
-    }
-    else {
-        printf("Код не сгенерирован\n");
-    }
-
-    return 0;
+	((A % 2) != (B % 2)) ? printf("РљРѕРґ СЃРіРµРЅРµСЂРёСЂРѕРІР°РЅ\n") : printf("РљРѕРґ РЅРµ СЃРіРµРЅРµСЂРёСЂРѕРІР°РЅ\n");
+	return 0;
 }
