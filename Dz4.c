@@ -8,7 +8,7 @@ int main() {
     scanf("%d", &A);
 
     printf("Введите число B: ");
-    scanf_s("%d", &B);
+    scanf("%d", &B);
 	((A % 2) != (B % 2)) ? printf("Код сгенерирован\n") : printf("Код не сгенерирован\n");
 	return 0;
 }
