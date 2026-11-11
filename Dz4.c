@@ -5,7 +5,7 @@ int main() {
     setlocale(LC_ALL, "Russian");
     int A, B;
     int condition;
-    printf("==========КОД ДОСТУПА==========")
+    printf("====== КОД ДОСТУПА ======\n");
     printf("Введите число A: ");
     scanf("%d", &A);
 
@@ -13,6 +13,6 @@ int main() {
     scanf("%d", &B);
     condition = ((A % 2 == 0 && B % 2 != 0) ||
         (A % 2 != 0 && B % 2 == 0));
-    printf("Код сгенерирован (1 - да, 0 - нет") : %d\n", condition);
+    printf("Код сгенерирован (1 - да, 0 - нет): %d\n", condition);
     return 0;
 }
